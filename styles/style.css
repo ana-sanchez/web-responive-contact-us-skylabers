@@ -25,6 +25,10 @@ p{
     font-weight: 300;
 }
 
+.section-wrapper{
+
+}
+
 /* css header * * * * * * * * * * * * * * * * */
 
 .group-name{
@@ -135,8 +139,6 @@ p{
     padding-top: 14px;
     padding-bottom: 14px;
     background-color: rgba(184, 184, 185, 20%);
-    min width: 768px;
-    max height: 333px;
     text-align: center;
 }
 
@@ -290,6 +292,10 @@ M E D I A Q U E R I E S  768 * * * * * * * * * * * */
 
 @media all and (min-width: 768px) {
 
+    .section-wrapper{
+        padding: 0 45px;
+    }
+
     /* css header * * * * * * * * * * * * * * * * */
 
     .header-container{
@@ -335,7 +341,7 @@ M E D I A Q U E R I E S  768 * * * * * * * * * * * */
 
     /* css strengths/weaknesses */
 
-    .strengths-weaknesses {
+    .strengths-weaknesses .section-wrapper{
         display: flex;
         flex-direction: row;
     }
@@ -418,6 +424,11 @@ M E D I A Q U E R I E S  1200 * * * * * * * * * * * */
 
 @media all and (min-width: 1200px){
 
+    .section-wrapper{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
      /* css header * * * * * * * * * * * * * * * * */
 
     .header-container{
@@ -430,7 +441,7 @@ M E D I A Q U E R I E S  1200 * * * * * * * * * * * */
         opacity: 0.8;
         margin-right: 488px;
       }
-      
+
     .lema{
         width: 514px;
         height: 60;
