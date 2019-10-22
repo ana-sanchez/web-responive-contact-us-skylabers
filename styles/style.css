@@ -12,7 +12,7 @@ body{
 }
 
 .wrapper{
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -66,18 +66,19 @@ p{
   .imag {
     width: 100%;
     height: 421px;
-    background-image: url("../img/hero.jpg");
-    background-color: blueviolet;
+    background-image: url("../img/hero-image.jpg");
+    background-size: cover;
   }
 
   .rectangle {
-    width: 290px;
     background-color: white;
+    width: 574px;
+    height: 90px;
     position: relative;
-    bottom: 0;
     left: 50%;
-    transform: translate(-50%,-80px);
-    padding: 1px 15px 16px 15px;
+    transform: translate(-50%,-50%);
+    padding: 2%;
+    margin-right: 3%;
     box-sizing: border-box;
   }
 
@@ -86,6 +87,8 @@ p{
     font-weight: 600;
     line-height: 1.39;
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
+  
   }
 
 /* css team * * * * * * * * * * * * * * * * */
@@ -150,11 +153,7 @@ p{
 
 /* css about * * * * * * * * * * * * * * * * */
 
-.about{
-    padding-bottom: 20px;
-}
-
- /*---Contenedor general---*/
+/*---Contenedor general---*/
 
 .figure-center {
     text-align: center;
@@ -168,7 +167,7 @@ p{
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-align: center;
-    margin-top: 40px;
+    position: relative;
 
 }
 
@@ -180,34 +179,43 @@ p{
     border: 4px solid rgba(0, 0, 0, 0.08);
     border-radius: 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 4%;
+    
 }
 
+
 .name-description {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     color: #000000;
     text-align: center;
-    font-weight: 300;
 }
 
 .text-description {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     color: #54585a ;
     margin-left: 4%;
     margin-right: 4%;
-    line-height: 1.5;
+  
+
 }
 
 /*---Redes sociales---*/
 
 .social-media {
+    display: inline;
     max-width: 150px;
-    margin: 30px auto;
-    
+    text-align: center;
+}
+
+.signal {
+    margin: auto;
+    text-align: center;
+    display: inline;
 }
 
 .fas,.fab {
@@ -217,7 +225,7 @@ p{
     color: #099d8d;
     cursor: pointer;
     text-align: center;
-    margin-left: 2%;
+    margin: 0 4px;
 }
 
 .fa-twitter:hover {
@@ -274,4 +282,179 @@ p{
 
 .footer__logo {
     width: 116px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+M E D I A Q U E R I E S  768 * * * * * * * * * * * */
+
+@media all and (min-width: 768px) {
+
+    /* css header * * * * * * * * * * * * * * * * */
+
+    .header-container{
+        width: 100vw;
+        background-color: #099d8d;
+        padding: 0 15px;
+    }
+    .group-name{
+        width: 40%;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .header-container nav{
+        display: inline-block;
+        float: right;
+    }
+    
+    .nav-header{
+        width: 350px;
+        height: auto;
+        line-height: 60px;
+        background-color: #099d8d;
+        padding: 0;
+    }
+
+    /* css hero */
+
+    .rectangle {
+        height: 80px;
+        opacity: 0.6;
+        padding: 2%;
+        margin-right: 281px;
+        position: relative;
+        transform: translate(-58%,-100%);
+  
+      }
+      .lema{
+       width: auto;
+       height: 80px;
+       margin-bottom: 3%;
+      }
+
+    /* css strengths/weaknesses */
+
+    .strengths-weaknesses {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* css team * * * * * * * * * * * * * * * * */
+
+    .team{
+        text-align: center;
+        padding: 25px 45px 0px 45px;
+    }
+
+    .team h2{
+        color: #099d8d;
+    }
+
+    /* css about */
+
+    .left {
+        text-align: left;
+        display: flex;
+    }
+
+    .right {
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        
+    }
+    .photo-personal {
+        margin: 5% 2%;
+    }
+
+    .name-description {
+        margin-top: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+       
+    }
+    .text-description {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .social-media {
+        margin-bottom: 10%;
+    }
+
+    /* css footer */
+
+    .footer {
+        padding: 30px 45px 45px;
+    }
+    .footer__copyright {
+        display:inline-block;
+        text-align: left;
+    }
+    .footer__logo-container {
+        text-align: left;
+    }
+    .footer__nav {
+        float:right;
+    }
+    .footer__list {
+        text-align: right;
+        margin: 0px;
+    }
+    .footer__list li {
+        margin-bottom: 14px;
+    }
+
+    .footer__list li:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+M E D I A Q U E R I E S  1200 * * * * * * * * * * * */
+
+@media all and (min-width: 1200px){
+
+     /* css header * * * * * * * * * * * * * * * * */
+
+    .header-container{
+        padding: 0 140px;
+    }
+
+    /* css hero */
+
+    .rectangle {
+        opacity: 0.8;
+        margin-right: 488px;
+      }
+      
+    .lema{
+        width: 514px;
+        height: 60;
+    }
+
+    /* css team * * * * * * * * * * * * * * * * */
+
+    .team{
+        width: 600px;
+        padding: 25px 0px 0px 0px;
+        margin: 0 auto;
+    }
+
+    /* css about */
+
+    .about {
+        margin: auto;
+        max-width: 900px;
+    }
+
+    /* css footer */
+    
+    .footer {
+        padding: 30px 135px 50px;
+    }
+
 }
