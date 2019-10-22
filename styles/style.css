@@ -137,8 +137,6 @@ p{
     padding-top: 14px;
     padding-bottom: 14px;
     background-color: rgba(184, 184, 185, 20%);
-    min width: 768px;
-    max height: 333px;
     text-align: center;
 }
 
@@ -321,7 +319,6 @@ M E D I A Q U E R I E S  768 * * * * * * * * * * * */
     }
 
     .header-container nav{
-        display: inline-block;
         float: right;
     }
     
@@ -407,7 +404,6 @@ M E D I A Q U E R I E S  768 * * * * * * * * * * * */
         margin-right: 2%;
     }
     .social-media {
-        margin-bottom: 10%;
         display: inline;
     }
 
@@ -461,7 +457,7 @@ M E D I A Q U E R I E S  1200 * * * * * * * * * * * */
         opacity: 0.8;
         margin-right: 488px;
       }
-      
+
     .lema{
         width: 514px;
         height: 60;
