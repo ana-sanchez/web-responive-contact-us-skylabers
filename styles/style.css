@@ -98,8 +98,12 @@ p{
     line-height: 1.39;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
-
 }
+
+.lema:first-child{
+    font-style: italic;
+}
+
 
 /* css team * * * * * * * * * * * * * * * * */
 
