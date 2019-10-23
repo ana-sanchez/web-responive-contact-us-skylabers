@@ -31,6 +31,10 @@ p{
 
 /* css header * * * * * * * * * * * * * * * * */
 
+.header-container{
+    opacity: 0.8;
+}
+
 .group-name{
     width: 100%;
     line-height: 60px;
@@ -38,7 +42,6 @@ p{
     background-color: #099d8d;
     text-transform: uppercase;
     color: white;
-    opacity: 0.95;
 }
 
 .group-name h1{
@@ -55,7 +58,6 @@ p{
     font-family: 'Rubik', sans-serif;
     color: white;
     text-transform: uppercase;
-    opacity: 0.9;
     align-items: center;
     padding: 0 15px;
 }
@@ -194,9 +196,7 @@ p{
     border-radius: 15px;
     text-align: center;
     margin-top: 4%;
-    
 }
-
 
 .name-description {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -409,6 +409,7 @@ p{
     }
     .social-media {
         display: inline;
+        margin: 10px 7px 30px 7px;
     }
 
     /* css footer */
@@ -473,6 +474,10 @@ p{
         width: 600px;
         padding: 0px;
         margin: 0 auto;
+    }
+
+    .social-media{
+        margin: 10px 10px 30px 10px;
     }
 
     /* css about */
